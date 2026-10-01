@@ -1,2 +1,2 @@
-# TercerQuiz_Programacion_BioPython_Semestre02_2026
-Este es una evaluacion
+# Tercer Quiz Bio-PythonV1
+Aplicación para verificar lo aprendido en el desarrollo temático del curso

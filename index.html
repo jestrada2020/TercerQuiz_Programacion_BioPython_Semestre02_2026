@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+  <html lang="es">
+    <head>
+    <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tercer Quiz de Matrices y ciclo for Python - 30 Preguntas Esenciales</title>
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+          <link rel="stylesheet" href="css/styles.css">
+          </head>
+          <body class="bg-gray-50">
+          <div class="container mx-auto px-4 py-8">
+          <h1 class="text-3xl font-bold text-center text-blue-700 border-b-2 border-blue-500 pb-4 mb-6">Tercer Quiz de Matrices y ciclo for Python</h1>
+          <h2 class="text-xl font-semibold text-center text-blue-600 mb-8">Matrices y Ciclos en Python (50 puntos - 30 preguntas)</h2>
+          
+          <!-- Información del estudiante -->
+          <div class="bg-blue-50 p-5 rounded-lg shadow-sm mb-6">
+          <h3 class="text-lg font-semibold text-blue-800 mb-4">Información del Estudiante</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div>
+          <label for="nombre" class="block text-sm font-medium text-gray-700 mb-1">Nombre Completo:</label>
+          <input type="text" id="nombre" placeholder="Ingrese su nombre completo" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+          </div>
+          <div>
+          <label for="apellidos" class="block text-sm font-medium text-gray-700 mb-1">Apellidos Completos:</label>
+          <input type="text" id="apellidos" placeholder="Ingrese sus apellidos" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+          </div>
+          <div>
+          <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Correo Electrónico:</label>
+          <input type="email" id="email" placeholder="Ingrese su correo electrónico" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+          </div>
+          </div>
+          </div>
+          
+          <!-- Instrucciones -->
+          <div class="bg-yellow-50 p-5 rounded-lg border-l-4 border-yellow-400 mb-6">
+          <h3 class="text-lg font-semibold text-gray-800 mb-2">Instrucciones Generales</h3>
+          <ul class="list-disc pl-5 space-y-1">
+          <li>Completa los <strong>espacios en blanco</strong> en cada fragmento de código Python.</li>
+          <li>Los espacios están marcados con <span class="code-placeholder">[...]</span>.</li>
+          <li>Usa la sintaxis adecuada de Python: ciclos, condicionales, funciones y matrices.</li>
+          <li>Haz clic en <strong>"Verificar Respuesta"</strong> en cada pregunta para obtener retroalimentación.</li>
+          <li>Cuando completes todas las preguntas, haz clic en <strong>"Calcular Nota Final"</strong>.</li>
+          <li>El resultado de tu evaluación se enviará automáticamente por correo electrónico.</li>
+          </ul>
+          </div>
+          
+          <!-- Barra de progreso -->
+          <div class="w-full bg-gray-200 rounded-full h-6 mb-8">
+          <div id="progress-bar" class="bg-green-500 h-6 rounded-full text-center text-white text-sm border-gray-200 leading-6" style="width: 0%">0%</div>
+          </div>
+          
+          <h2 class="text-xl font-semibold text-gray-800 mb-6">Sección de Preguntas - Matrices y Ciclos en Python (Total: 50 Puntos - 30 Preguntas)</h2>
+          
+          <!-- Contenedor de Preguntas -->
+          <div id="questions-container" class="space-y-8">
+          
+          <!-- CATEGORÍA 1: RECORRIDO Y OPERACIONES CON MATRICES (CICLOS FOR) -->
+          <h3 class="text-lg font-semibold text-blue-600 border-b border-blue-300 pb-2">Recorrido y Operaciones con Matrices (Ciclos FOR) - Preguntas 1-8 (12 puntos)</h3>
+
+          <!-- Pregunta 1 -->
+          <div class="question bg-white rounded-lg shadow-sm p-5 border border-gray-200" id="q1">
+          <div class="flex justify-between items-center mb-3">
+          <h4 class="text-lg font-semibold text-gray-800">1. Recorrido de Matriz por Valor con FOR</h4>
+          <span class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm">1 Punto</span>
+          </div>
+          <div class="bg-gray-50 p-3 rounded-md mb-3">
+          <p>Completa el código que recorre una matriz 3x3 por valor usando for anidados e imprime sus elementos en filas.</p>
+          <p class="text-sm text-gray-600 mt-2">Sugerencia: Itera cada fila en matriz, cada elemento en fila, usa end=" " y un print() al final de cada fila.</p>
+          </div>
+          <div class="code-container">
+          <pre>matriz = [
+    [10, 20, 30],
+    [40, 50, 60],
+    [70, 80, 90]
+]
+
+for fila in <span class="code-placeholder" id="q1-part1" contenteditable="true">[...]</span>:
+    for elemento in <span class="code-placeholder" id="q1-part2" contenteditable="true">[...]</span>:
+        print(elemento, <span class="code-placeholder" id="q1-part3" contenteditable="true">[...]</span>=" ")
+    <span class="code-placeholder" id="q1-part4" contenteditable="true">[...]</span>()</pre>
+          </div>
+          <button class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-md text-sm mt-2" onclick="checkAnswer(1)">Verificar Respuesta</button>
+          <div id="q1-feedback" class="mt-2 p-3 rounded-md"></div>
+          </div>
+
+          <!-- Pregunta 2 -->
+          <div class="question bg-white rounded-lg shadow-sm p-5 border border-gray-200" id="q2">
+          <div class="flex justify-between items-center mb-3">
+          <h4 class="text-lg font-semibold text-gray-800">2. Suma Total de Elementos por Índices con FOR</h4>
+          <span class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm">2 Puntos</span>
+          </div>
+          <div class="bg-gray-50 p-3 rounded-md mb-3">
+          <p>Completa el código que recorre una matriz por índices [i][j] usando range(len(...)) y calcula la suma total de sus elementos.</p>
+          <p class="text-sm text-gray-600 mt-2">Sugerencia: Usa range(len(matriz)), len(matriz[i]), accede con [i][j] y acumula con +=.</p>
+          </div>
+          <div class="code-container">
+          <pre>matriz = [
+    [3, 8, 1],
+    [7, 4, 6],
+    [2, 5, 9]
+]
+
+suma_total = 0
+
+for i in <span class="code-placeholder" id="q2-part1" contenteditable="true">[...]</span>(len(matriz)):
+    for j in range(len(matriz[<span class="code-placeholder" id="q2-part2" contenteditable="true">[...]</span>])):
+        elemento = matriz[i][<span class="code-placeholder" id="q2-part3" contenteditable="true">[...]</span>]
+        suma_total <span class="code-placeholder" id="q2-part4" contenteditable="true">[...]</span> elemento
+
+print(f"Suma total: {suma_total}")</pre>
+          </div>
+          <button class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-md text-sm mt-2" onclick="checkAnswer(2)">Verificar Respuesta</button>
+          <div id="q2-feedback" class="mt-2 p-3 rounded-md"></div>
+          </div>
+
+          <!-- Pregunta 3 -->
+          <div class="question bg-white rounded-lg shadow-sm p-5 border border-gray-200" id="q3">
+          <div class="flex justify-between items-center mb-3">
+          <h4 class="text-lg font-semibold text-gray-800">3. Búsqueda de un Valor en Matriz con FOR y Bandera</h4>
+          <span class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm">2 Puntos</span>
+          </div>
+          <div class="bg-gray-50 p-3 rounded-md mb-3">
+          <p>Completa el código que busca un valor en la matriz, activa una bandera booleana y rompe los ciclos con break.</p>
+          <p class="text-sm text-gray-600 mt-2">Sugerencia: Inicializa encontrado en False, compara con ==, usa break dentro del if y comprueba la bandera en el ciclo externo.</p>
+          </div>
+          <div class="code-container">
+          <pre>matriz = [
+    [15, 28, 33],
+    [42, 59, 61],
+    [74, 88, 95]
+]
+
+buscado = 59
+encontrado = <span class="code-placeholder" id="q3-part1" contenteditable="true">[...]</span>
+
+for i in range(len(matriz)):
+    for j in range(len(matriz[i])):
+        if matriz[i][j] <span class="code-placeholder" id="q3-part2" contenteditable="true">[...]</span> buscado:
+            encontrado = True
+            print(f"Valor {buscado} encontrado en [{i},{j}]")
+            <span class="code-placeholder" id="q3-part3" contenteditable="true">[...]</span>
+    if <span class="code-placeholder" id="q3-part4" contenteditable="true">[...]</span>:
+        break</pre>
+          </div>
+          <button class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-md text-sm mt-2" onclick="checkAnswer(3)">Verificar Respuesta</button>
+          <div id="q3-feedback" class="mt-2 p-3 rounded-md"></div>
+          </div>
+
+          <!-- Pregunta 4 -->
+          <div class="question bg-white rounded-lg shadow-sm p-5 border border-gray-200" id="q4">
+          <div class="flex justify-between items-center mb-3">
+          <h4 class="text-lg font-semibold text-gray-800">4. Modificación In-Place de Elementos por Factor</h4>
+          <span class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm">2 Puntos</span>
+          </div>
+          <div class="bg-gray-50 p-3 rounded-md mb-3">
+          <p>Completa el código que recorre una matriz y multiplica cada uno de sus elementos directamente en su posición por un factor escalar.</p>
+          <p class="text-sm text-gray-600 mt-2">Sugerencia: Usa len(matriz) y len(matriz[i]) para los límites, multiplica con *= y muestra la variable matriz.</p>
+          </div>
+          <div class="code-container">
+          <pre>matriz = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+factor = 5
+
+for i in range(<span class="code-placeholder" id="q4-part1" contenteditable="true">[...]</span>(matriz)):
+    for j in range(len(matriz[<span class="code-placeholder" id="q4-part2" contenteditable="true">[...]</span>])):
+        matriz[i][j] <span class="code-placeholder" id="q4-part3" contenteditable="true">[...]</span> factor
+
+print(f"Matriz multiplicada por {factor}:\n{<span class="code-placeholder" id="q4-part4" contenteditable="true">[...]</span>}")</pre>
+          </div>
+          <button class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-md text-sm mt-2" onclick="checkAnswer(4)">Verificar Respuesta</button>
+          <div id="q4-feedback" class="mt-2 p-3 rounded-md"></div>
+          </div>
+          
+          <!-- Pregunta 5 -->
+          <div class="question bg-white rounded-lg shadow-sm p-5 border border-gray-200" id="q5">
+          <div class="flex justify-between items-center mb-3">
+          <h4 class="text-lg font-semibold text-gray-800">5. Conteo de Números Pares e Impares</h4>
+          <span class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm">1 Punto</span>
+          </div>
+          <div class="bg-gray-50 p-3 rounded-md mb-3">
+          <p>Completa el código que clasifica y cuenta cuántos números son pares y cuántos impares en la matriz dada.</p>
+          <p class="text-sm text-gray-600 mt-2">Sugerencia: Itera en cada fila, usa el operador módulo % con 2, incrementa con += 1 y usa else para los impares.</p>
+          </div>
+          <div class="code-container">
+          <pre>matriz = [
+    [12, 7, 19, 4],
+    [8, 15, 22, 31],
+    [5, 18, 9, 14]
+]
+
+pares = 0
+impares = 0
+
+for fila in matriz:
+    for num in <span class="code-placeholder" id="q5-part1" contenteditable="true">[...]</span>:
+        if num <span class="code-placeholder" id="q5-part2" contenteditable="true">[...]</span> 2 == 0:
+            pares <span class="code-placeholder" id="q5-part3" contenteditable="true">[...]</span> 1
+        <span class="code-placeholder" id="q5-part4" contenteditable="true">[...]</span>:
+            impares += 1
+
+print(f"Pares: {pares}, Impares: {impares}")</pre>
+          </div>
+          <button class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-md text-sm mt-2" onclick="checkAnswer(5)">Verificar Respuesta</button>
+          <div id="q5-feedback" class="mt-2 p-3 rounded-md"></div>
+          </div>
+
+          <!-- Pregunta 6 -->
+          <div class="question bg-white rounded-lg shadow-sm p-5 border border-gray-200" id="q6">
+          <div class="flex justify-between items-center mb-3">
+          <h4 class="text-lg font-semibold text-gray-800">6. Búsqueda del Valor Máximo y sus Coordenadas</h4>
+          <span class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm">1 Punto</span>
+          </div>
+          <div class="bg-gray-50 p-3 rounded-md mb-3">
+          <p>Completa el código que busca el valor numérico más grande dentro de una matriz y guarda su coordenada (i, j).</p>
+          <p class="text-sm text-gray-600 mt-2">Sugerencia: Inicia en matriz[0][0], compara con >, actualiza maximo y almacena j en la tupla.</p>
+          </div>
+          <div class="code-container">
+          <pre>matriz = [
+    [24, 67, 12],
+    [85, 43, 91],
+    [38, 76, 50]
+]
+
+maximo = matriz[0][<span class="code-placeholder" id="q6-part1" contenteditable="true">[...]</span>]
+pos_max = (0, 0)
+
+for i in range(len(matriz)):
+    for j in range(len(matriz[i])):
+        if matriz[i][j] <span class="code-placeholder" id="q6-part2" contenteditable="true">[...]</span> maximo:
+            <span class="code-placeholder" id="q6-part3" contenteditable="true">[...]</span> = matriz[i][j]
+            pos_max = (i, <span class="code-placeholder" id="q6-part4" contenteditable="true">[...]</span>)
+
+print(f"Máximo: {maximo} en coordenada {pos_max}")</pre>
+          </div>
+          <button class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-md text-sm mt-2" onclick="checkAnswer(6)">Verificar Respuesta</button>
+          <div id="q6-feedback" class="mt-2 p-3 rounded-md"></div>
+          </div>
+
+          <!-- Pregunta 7 -->
+          <div class="question bg-white rounded-lg shadow-sm p-5 border border-gray-200" id="q7">
+          <div class="flex justify-between items-center mb-3">
+          <h4 class="text-lg font-semibold text-gray-800">7. Suma de la Diagonal Principal de una Matriz</h4>
+          <span class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm">1 Punto</span>
+          </div>
+          <div class="bg-gray-50 p-3 rounded-md mb-3">
+          <p>Completa el código que suma los elementos de la diagonal principal de una matriz cuadrada accediendo con matriz[i][i].</p>
+          <p class="text-sm text-gray-600 mt-2">Sugerencia: Obtén dimensión con len, itera con range(n), acumula con += y accede al elemento [i][i].</p>
+          </div>
+          <div class="code-container">
+          <pre>matriz_cuadrada = [
+    [5, 2, 9],
+    [1, 7, 4],
+    [8, 3, 6]
+]
+
+suma_diagonal = 0
+n = <span class="code-placeholder" id="q7-part1" contenteditable="true">[...]</span>(matriz_cuadrada)
+
+for i in <span class="code-placeholder" id="q7-part2" contenteditable="true">[...]</span>(n):
+    suma_diagonal <span class="code-placeholder" id="q7-part3" contenteditable="true">[...]</span> matriz_cuadrada[i][<span class="code-placeholder" id="q7-part4" contenteditable="true">[...]</span>]
+
+print(f"Suma de la diagonal principal: {suma_diagonal}")</pre>
+          </div>
+          <button class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-md text-sm mt-2" onclick="checkAnswer(7)">Verificar Respuesta</button>
+          <div id="q7-feedback" class="mt-2 p-3 rounded-md"></div>
+          </div>
+
+          <!-- Pregunta 8 -->
+          <div class="question bg-white rounded-lg shadow-sm p-5 border border-gray-200" id="q8">
+          <div class="flex justify-between items-center mb-3">
+          <h4 class="text-lg font-semibold text-gray-800">8. Suma por Filas Individuales</h4>
+          <span class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm">2 Puntos</span>
+          </div>
+          <div class="bg-gray-50 p-3 rounded-md mb-3">
+          <p>Completa el código que calcula la sumatoria independiente de cada fila y guarda los totales en una lista sumas_filas.</p>
+          <p class="text-sm text-gray-600 mt-2">Sugerencia: Reinicia total_fila en 0 al iniciar cada fila, itera en fila, acumula con += y agrega con append.</p>
+          </div>
+          <div class="code-container">
+          <pre>matriz = [
+    [10, 20, 30],
+    [5, 15, 25],
+    [1, 2, 3]
+]
+
+sumas_filas = []
+
+for fila in matriz:
+    total_fila = <span class="code-placeholder" id="q8-part1" contenteditable="true">[...]</span>
+    for elemento in <span class="code-placeholder" id="q8-part2" contenteditable="true">[...]</span>:
+        total_fila <span class="code-placeholder" id="q8-part3" contenteditable="true">[...]</span> elemento
+    sumas_filas.<span class="code-placeholder" id="q8-part4" contenteditable="true">[...]</span>(total_fila)
+
+print(f"Sumas por fila: {sumas_filas}")</pre>
+          </div>
+          <button class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-md text-sm mt-2" onclick="checkAnswer(8)">Verificar Respuesta</button>
+          <div id="q8-feedback" class="mt-2 p-3 rounded-md"></div>
+          </div>
+          
+          <!-- CATEGORÍA 2: BÚSQUEDA, FILTRADO Y OPERACIONES CON MATRICES (CICLOS WHILE) -->
+          <h3 class="text-lg font-semibold text-blue-600 border-b border-blue-300 pb-2">Búsqueda, Filtrado y Operaciones con Matrices (Ciclos WHILE) - Preguntas 9-15 (12 puntos)</h3>
+
+          <!-- Pregunta 9 -->
+          <div class="question bg-white rounded-lg shadow-sm p-5 border border-gray-200" id="q9">
+          <div class="flex justify-between items-center mb-3">
+          <h4 class="text-lg font-semibold text-gray-800">9. Recorrido de Matriz con Ciclos WHILE Anidados</h4>
+          <span class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm">2 Puntos</span>
+          </div>
+          <div class="bg-gray-50 p-3 rounded-md mb-3">
+          <p>Completa el código que recorre una matriz mediante ciclos while anidados usando índices i y j manuales.</p>
+          <p class="text-sm text-gray-600 mt-2">Sugerencia: Usa while para el ciclo externo, inicializa j en 0 dentro, compara j < len(...) e incrementa i con += 1.</p>
+          </div>
+          <div class="code-container">
+          <pre>matriz = [
+    [100, 200, 300],
+    [400, 500, 600],
+    [700, 800, 900]
+]
+
+i = 0
+<span class="code-placeholder" id="q9-part1" contenteditable="true">[...]</span> i < len(matriz):
+    j = <span class="code-placeholder" id="q9-part2" contenteditable="true">[...]</span>
+    while j <span class="code-placeholder" id="q9-part3" contenteditable="true">[...]</span> len(matriz[i]):
+        val = matriz[i][j]
+        print(f"[{i}][{j}] = {val}", end=" | ")
+        j += 1
+    print()
+    i <span class="code-placeholder" id="q9-part4" contenteditable="true">[...]</span> 1</pre>
+          </div>
+          <button class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-md text-sm mt-2" onclick="checkAnswer(9)">Verificar Respuesta</button>
+          <div id="q9-feedback" class="mt-2 p-3 rounded-md"></div>
+          </div>
+
+          <!-- Pregunta 10 -->
+          <div class="question bg-white rounded-lg shadow-sm p-5 border border-gray-200" id="q10">
+          <div class="flex justify-between items-center mb-3">
+          <h4 class="text-lg font-semibold text-gray-800">10. Búsqueda en Matriz con WHILE y Parada con BREAK</h4>
+          <span class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm">2 Puntos</span>
+          </div>
+          <div class="bg-gray-50 p-3 rounded-md mb-3">
+          <p>Completa el código que busca un valor específico en la matriz usando while anidados y sale de ambos ciclos al encontrarlo.</p>
+          <p class="text-sm text-gray-600 mt-2">Sugerencia: Inicializa encontrado en False, compara elemento con valor_buscado, sal del ciclo interno con break y verifica encontrado para romper el externo.</p>
+          </div>
+          <div class="code-container">
+          <pre>matriz_while = [
+    [1, 2, 3, 4],
+    [5, 6, 7, 8],
+    [9, 10, 11, 12]
+]
+
+valor_buscado = 7
+i = 0
+encontrado = <span class="code-placeholder" id="q10-part1" contenteditable="true">[...]</span>
+
+while i < len(matriz_while):
+    j = 0
+    while j < len(matriz_while[i]):
+        elemento = matriz_while[i][j]
+
+        if elemento == <span class="code-placeholder" id="q10-part2" contenteditable="true">[...]</span>:
+            print(f"Encontrado {valor_buscado} en [{i},{j}].")
+            encontrado = True
+            <span class="code-placeholder" id="q10-part3" contenteditable="true">[...]</span>
+
+        j += 1
+
+    if <span class="code-placeholder" id="q10-part4" contenteditable="true">[...]</span>:
+        break
+
+    i += 1</pre>
+          </div>
+          <button class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-md text-sm mt-2" onclick="checkAnswer(10)">Verificar Respuesta</button>
+          <div id="q10-feedback" class="mt-2 p-3 rounded-md"></div>
+          </div>
+
+          <!-- Pregunta 11 -->
+          <div class="question bg-white rounded-lg shadow-sm p-5 border border-gray-200" id="q11">
+          <div class="flex justify-between items-center mb-3">
+          <h4 class="text-lg font-semibold text-gray-800">11. Suma Condicional con WHILE (Mayores a 50)</h4>
+          <span class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm">2 Puntos</span>
+          </div>
+          <div class="bg-gray-50 p-3 rounded-md mb-3">
+          <p>Completa el código que suma únicamente los números mayores a 50 presentes en una matriz utilizando ciclos while.</p>
+          <p class="text-sm text-gray-600 mt-2">Sugerencia: Inicializa i en 0, compara con >, acumula con += y aumenta j sumando 1.</p>
+          </div>
+          <div class="code-container">
+          <pre>matriz = [
+    [25, 60, 15],
+    [80, 10, 95],
+    [40, 55, 30]
+]
+
+suma_mayores = 0
+i = <span class="code-placeholder" id="q11-part1" contenteditable="true">[...]</span>
+
+while i < len(matriz):
+    j = 0
+    while j < len(matriz[i]):
+        if matriz[i][j] <span class="code-placeholder" id="q11-part2" contenteditable="true">[...]</span> 50:
+            suma_mayores <span class="code-placeholder" id="q11-part3" contenteditable="true">[...]</span> matriz[i][j]
+        j += <span class="code-placeholder" id="q11-part4" contenteditable="true">[...]</span>
+    i += 1
+
+print(f"Suma de elementos mayores a 50: {suma_mayores}")</pre>
+          </div>
+          <button class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-md text-sm mt-2" onclick="checkAnswer(11)">Verificar Respuesta</button>
+          <div id="q11-feedback" class="mt-2 p-3 rounded-md"></div>
+          </div>
+
+          <!-- Pregunta 12 -->
+          <div class="question bg-white rounded-lg shadow-sm p-5 border border-gray-200" id="q12">
+          <div class="flex justify-between items-center mb-3">
+          <h4 class="text-lg font-semibold text-gray-800">12. Aplanar Matriz a Lista Unidimensional</h4>
+          <span class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm">1 Punto</span>
+          </div>
+          <div class="bg-gray-50 p-3 rounded-md mb-3">
+          <p>Completa el código que recorre una matriz 2D y extrae todos sus elementos secuencialmente a una lista simple de 1 dimensión.</p>
+          <p class="text-sm text-gray-600 mt-2">Sugerencia: Itera fila en matriz, elem en fila, agrega cada elem con append y muestra lista_plana.</p>
+          </div>
+          <div class="code-container">
+          <pre>matriz = [
+    ["A", "B"],
+    ["C", "D"],
+    ["E", "F"]
+]
+
+lista_plana = []
+
+for fila in <span class="code-placeholder" id="q12-part1" contenteditable="true">[...]</span>:
+    for elem in <span class="code-placeholder" id="q12-part2" contenteditable="true">[...]</span>:
+        lista_plana.<span class="code-placeholder" id="q12-part3" contenteditable="true">[...]</span>(elem)
+
+print(f"Lista aplanada: {<span class="code-placeholder" id="q12-part4" contenteditable="true">[...]</span>}")</pre>
+          </div>
+          <button class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-md text-sm mt-2" onclick="checkAnswer(12)">Verificar Respuesta</button>
+          <div id="q12-feedback" class="mt-2 p-3 rounded-md"></div>
+          </div>
+          
+          <!-- Pregunta 13 -->
+          <div class="question bg-white rounded-lg shadow-sm p-5 border border-gray-200" id="q13">
+          <div class="flex justify-between items-center mb-3">
+          <h4 class="text-lg font-semibold text-gray-800">13. Reemplazo de Elementos Negativos por Cero</h4>
+          <span class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm">1 Punto</span>
+          </div>
+          <div class="bg-gray-50 p-3 rounded-md mb-3">
+          <p>Completa el código que recorre una matriz y reemplaza directamente por cero todos los números negativos que encuentre.</p>
+          <p class="text-sm text-gray-600 mt-2">Sugerencia: Itera con range(len(matriz)), compara con < 0, asigna 0 y muestra matriz.</p>
+          </div>
+          <div class="code-container">
+          <pre>matriz = [
+    [5, -3, 8],
+    [-1, 12, -7],
+    [0, -4, 9]
+]
+
+for i in <span class="code-placeholder" id="q13-part1" contenteditable="true">[...]</span>(len(matriz)):
+    for j in range(len(matriz[i])):
+        if matriz[i][j] <span class="code-placeholder" id="q13-part2" contenteditable="true">[...]</span> 0:
+            matriz[i][j] = <span class="code-placeholder" id="q13-part3" contenteditable="true">[...]</span>
+
+print(f"Matriz sin negativos:\n{<span class="code-placeholder" id="q13-part4" contenteditable="true">[...]</span>}")</pre>
+          </div>
+          <button class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-md text-sm mt-2" onclick="checkAnswer(13)">Verificar Respuesta</button>
+          <div id="q13-feedback" class="mt-2 p-3 rounded-md"></div>
+          </div>
+
+          <!-- Pregunta 14 -->
+          <div class="question bg-white rounded-lg shadow-sm p-5 border border-gray-200" id="q14">
+          <div class="flex justify-between items-center mb-3">
+          <h4 class="text-lg font-semibold text-gray-800">14. Matriz Transpuesta con Bucles Anidados</h4>
+          <span class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm">2 Puntos</span>
+          </div>
+          <div class="bg-gray-50 p-3 rounded-md mb-3">
+          <p>Completa el código que obtiene la matriz transpuesta (intercambiando filas y columnas) de una matriz de 2x3.</p>
+          <p class="text-sm text-gray-600 mt-2">Sugerencia: Obtén columnas con len(matriz[0]), itera con range(columnas), accede con [i][j] y usa append en transpuesta.</p>
+          </div>
+          <div class="code-container">
+          <pre>matriz = [
+    [1, 2, 3],
+    [4, 5, 6]
+]
+
+filas = len(matriz)
+columnas = <span class="code-placeholder" id="q14-part1" contenteditable="true">[...]</span>(matriz[0])
+transpuesta = []
+
+for j in range(<span class="code-placeholder" id="q14-part2" contenteditable="true">[...]</span>):
+    nueva_fila = []
+    for i in range(filas):
+        nueva_fila.append(matriz[<span class="code-placeholder" id="q14-part3" contenteditable="true">[...]</span>][j])
+    transpuesta.<span class="code-placeholder" id="q14-part4" contenteditable="true">[...]</span>(nueva_fila)
+
+print(f"Transpuesta: {transpuesta}")</pre>
+          </div>
+          <button class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-md text-sm mt-2" onclick="checkAnswer(14)">Verificar Respuesta</button>
+          <div id="q14-feedback" class="mt-2 p-3 rounded-md"></div>
+          </div>
+
+          <!-- Pregunta 15 -->
+          <div class="question bg-white rounded-lg shadow-sm p-5 border border-gray-200" id="q15">
+          <div class="flex justify-between items-center mb-3">
+          <h4 class="text-lg font-semibold text-gray-800">15. Conteo de Múltiplos de 3 con Ciclos WHILE</h4>
+          <span class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm">2 Puntos</span>
+          </div>
+          <div class="bg-gray-50 p-3 rounded-md mb-3">
+          <p>Completa el código que recorre una matriz con ciclos while anidados y cuenta cuántos elementos son múltiplos de 3.</p>
+          <p class="text-sm text-gray-600 mt-2">Sugerencia: Inicializa contador en 0, usa operador módulo % 3 == 0, acumula con += 1 e incrementa r con r += 1.</p>
+          </div>
+          <div class="code-container">
+          <pre>matriz = [
+    [3, 7, 9, 11],
+    [12, 14, 15, 18],
+    [20, 21, 22, 27]
+]
+
+contador_multiplos = <span class="code-placeholder" id="q15-part1" contenteditable="true">[...]</span>
+r = 0
+
+while r < len(matriz):
+    c = 0
+    while c < len(matriz[r]):
+        if matriz[r][c] <span class="code-placeholder" id="q15-part2" contenteditable="true">[...]</span> 3 == 0:
+            contador_multiplos <span class="code-placeholder" id="q15-part3" contenteditable="true">[...]</span> 1
+        c += 1
+    r += <span class="code-placeholder" id="q15-part4" contenteditable="true">[...]</span>
+
+print(f"Total de múltiplos de 3: {contador_multiplos}")</pre>
+          </div>
+          <button class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-md text-sm mt-2" onclick="checkAnswer(15)">Verificar Respuesta</button>
+          <div id="q15-feedback" class="mt-2 p-3 rounded-md"></div>
+          </div>
+
+          <!-- CATEGORÍA 4: CREACIÓN Y MANIPULACIÓN DE MATRICES -->
+          <h3 class="text-lg font-semibold text-blue-600 border-b border-blue-300 pb-2">Creación y Manejo de Matrices con Funciones - Preguntas 16-30 (26 puntos)</h3>
+
+          <!-- Pregunta 16 -->
+          <div class="question bg-white rounded-lg shadow-sm p-5 border border-gray-200" id="q16">
+          <div class="flex justify-between items-center mb-3">
+          <h4 class="text-lg font-semibold text-gray-800">16. Crear Matriz con Valores Constantes</h4>
+          <span class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm">2 Puntos</span>
+          </div>
+          <div class="bg-gray-50 p-3 rounded-md mb-3">
+          <p>Completa la función que crea y retorna una matriz con dimensiones dadas rellena con un valor constante por defecto.</p>
+          <p class="text-sm text-gray-600 mt-2">Sugerencia: Usa range(filas) para el ciclo exterior, range(columnas) para el interior, append en fila y append en matriz.</p>
+          </div>
+          <div class="code-container">
+          <pre>def crear_matriz_constante(filas=3, columnas=3, valor_defecto=0):
+    matriz = []
+
+    for i in <span class="code-placeholder" id="q16-part1" contenteditable="true">[...]</span>(filas):
+        fila = []
+        for j in range(<span class="code-placeholder" id="q16-part2" contenteditable="true">[...]</span>):
+            fila.<span class="code-placeholder" id="q16-part3" contenteditable="true">[...]</span>(valor_defecto)
+
+        <span class="code-placeholder" id="q16-part4" contenteditable="true">[...]</span>.append(fila)
+
+    print(f"Matriz Constante ({filas}x{columnas}):\n{matriz}")
+    return matriz
+
+# crear_matriz_constante()</pre>
+          </div>
+          <button class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-md text-sm mt-2" onclick="checkAnswer(16)">Verificar Respuesta</button>
+          <div id="q16-feedback" class="mt-2 p-3 rounded-md"></div>
+          </div>
+
+          <!-- Pregunta 17 -->
+          <div class="question bg-white rounded-lg shadow-sm p-5 border border-gray-200" id="q17">
+          <div class="flex justify-between items-center mb-3">
+          <h4 class="text-lg font-semibold text-gray-800">17. Crear Matriz Identidad con Condicional IF</h4>
+          <span class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm">2 Puntos</span>
+          </div>
+          <div class="bg-gray-50 p-3 rounded-md mb-3">
+          <p>Completa la función que crea una matriz identidad de tamaño n x n (1 en la diagonal principal y 0 en las demás posiciones).</p>
+          <p class="text-sm text-gray-600 mt-2">Sugerencia: Itera con range(n), evalúa la igualdad con ==, usa else para el valor 0 y agrega fila a matriz con append.</p>
+          </div>
+          <div class="code-container">
+          <pre>def crear_matriz_identidad(n=3):
+    matriz = []
+
+    for i in <span class="code-placeholder" id="q17-part1" contenteditable="true">[...]</span>(n):
+        fila = []
+        for j in range(n):
+            if i <span class="code-placeholder" id="q17-part2" contenteditable="true">[...]</span> j:
+                fila.append(1)
+            <span class="code-placeholder" id="q17-part3" contenteditable="true">[...]</span>:
+                fila.append(0)
+
+        matriz.<span class="code-placeholder" id="q17-part4" contenteditable="true">[...]</span>(fila)
+
+    print(f"Matriz Identidad ({n}x{n}):\n{matriz}")
+    return matriz
+
+# crear_matriz_identidad()</pre>
+          </div>
+          <button class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-md text-sm mt-2" onclick="checkAnswer(17)">Verificar Respuesta</button>
+          <div id="q17-feedback" class="mt-2 p-3 rounded-md"></div>
+          </div>
+
+          <!-- Pregunta 18 -->
+          <div class="question bg-white rounded-lg shadow-sm p-5 border border-gray-200" id="q18">
+          <div class="flex justify-between items-center mb-3">
+          <h4 class="text-lg font-semibold text-gray-800">18. Crear Matriz Secuencial Acumulativa</h4>
+          <span class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm">2 Puntos</span>
+          </div>
+          <div class="bg-gray-50 p-3 rounded-md mb-3">
+          <p>Completa la función que genera una matriz con números consecutivos iniciando desde 1 usando un contador incremental.</p>
+          <p class="text-sm text-gray-600 mt-2">Sugerencia: Inicializa contador en 1, usa range(columnas), incrementa con += 1 y agrega fila a matriz.</p>
+          </div>
+          <div class="code-container">
+          <pre>def crear_matriz_secuencial(filas=2, columnas=4):
+    matriz = []
+    contador = <span class="code-placeholder" id="q18-part1" contenteditable="true">[...]</span>
+
+    for i in range(filas):
+        fila = []
+        for j in <span class="code-placeholder" id="q18-part2" contenteditable="true">[...]</span>(columnas):
+            fila.append(contador)
+            contador <span class="code-placeholder" id="q18-part3" contenteditable="true">[...]</span> 1
+
+        matriz.append(<span class="code-placeholder" id="q18-part4" contenteditable="true">[...]</span>)
+
+    print(f"Matriz Secuencial ({filas}x{columnas}):\n{matriz}")
+    return matriz
+
+# crear_matriz_secuencial()</pre>
+          </div>
+          <button class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-md text-sm mt-2" onclick="checkAnswer(18)">Verificar Respuesta</button>
+          <div id="q18-feedback" class="mt-2 p-3 rounded-md"></div>
+          </div>
+
+          <!-- Pregunta 19 -->
+          <div class="question bg-white rounded-lg shadow-sm p-5 border border-gray-200" id="q19">
+          <div class="flex justify-between items-center mb-3">
+          <h4 class="text-lg font-semibold text-gray-800">19. Crear Matriz Tabla de Multiplicar</h4>
+          <span class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm">2 Puntos</span>
+          </div>
+          <div class="bg-gray-50 p-3 rounded-md mb-3">
+          <p>Completa la función que crea una matriz con las tablas de multiplicar de 1 a n calculando el producto de fila por columna.</p>
+          <p class="text-sm text-gray-600 mt-2">Sugerencia: Usa range(1, n + 1) para filas y columnas, multiplica con el operador * y agrega con append.</p>
+          </div>
+          <div class="code-container">
+          <pre>def crear_matriz_multiplicacion(n=4):
+    tabla = []
+
+    for i in <span class="code-placeholder" id="q19-part1" contenteditable="true">[...]</span>(1, n + 1):
+        fila = []
+        for j in range(1, n + 1):
+            producto = i <span class="code-placeholder" id="q19-part2" contenteditable="true">[...]</span> j
+            fila.<span class="code-placeholder" id="q19-part3" contenteditable="true">[...]</span>(producto)
+
+        <span class="code-placeholder" id="q19-part4" contenteditable="true">[...]</span>.append(fila)
+
+    print(f"Tabla de Multiplicar ({n}x{n}):\n{tabla}")
+    return tabla
+
+# crear_matriz_multiplicacion()</pre>
+          </div>
+          <button class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-md text-sm mt-2" onclick="checkAnswer(19)">Verificar Respuesta</button>
+          <div id="q19-feedback" class="mt-2 p-3 rounded-md"></div>
+          </div>
+
+          <!-- Pregunta 20 -->
+          <div class="question bg-white rounded-lg shadow-sm p-5 border border-gray-200" id="q20">
+          <div class="flex justify-between items-center mb-3">
+          <h4 class="text-lg font-semibold text-gray-800">20. Crear Matriz con Ciclos WHILE Anidados</h4>
+          <span class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm">2 Puntos</span>
+          </div>
+          <div class="bg-gray-50 p-3 rounded-md mb-3">
+          <p>Completa la función que construye una matriz de dimensiones 3x2 utilizando ciclos while anidados con contadores manuales.</p>
+          <p class="text-sm text-gray-600 mt-2">Sugerencia: Condición i < filas, inicializa j en 0, usa append para agregar cada valor e incrementa i con += 1.</p>
+          </div>
+          <div class="code-container">
+          <pre>def crear_matriz_while(filas=3, columnas=2):
+    matriz = []
+    i = 0
+
+    while i <span class="code-placeholder" id="q20-part1" contenteditable="true">[...]</span> filas:
+        fila = []
+        j = <span class="code-placeholder" id="q20-part2" contenteditable="true">[...]</span>
+
+        while j < columnas:
+            fila.<span class="code-placeholder" id="q20-part3" contenteditable="true">[...]</span>(f"{i}-{j}")
+            j += 1
+
+        matriz.append(fila)
+        i <span class="code-placeholder" id="q20-part4" contenteditable="true">[...]</span> 1
+
+    print(f"Matriz con While ({filas}x{columnas}):\n{matriz}")
+    return matriz
+
+# crear_matriz_while()</pre>
+          </div>
+          <button class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-md text-sm mt-2" onclick="checkAnswer(20)">Verificar Respuesta</button>
+          <div id="q20-feedback" class="mt-2 p-3 rounded-md"></div>
+          </div>
+          
+          <!-- Pregunta 21 -->
+          <div class="question bg-white rounded-lg shadow-sm p-5 border border-gray-200" id="q21">
+          <div class="flex justify-between items-center mb-3">
+          <h4 class="text-lg font-semibold text-gray-800">21. Crear Matriz desde Lista Plana (1D a 2D)</h4>
+          <span class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm">2 Puntos</span>
+          </div>
+          <div class="bg-gray-50 p-3 rounded-md mb-3">
+          <p>Completa la función que convierte una lista plana de 6 elementos en una matriz bidimensional de 2 filas por 3 columnas.</p>
+          <p class="text-sm text-gray-600 mt-2">Sugerencia: Usa range(filas), accede al elemento con datos[idx], incrementa idx sumando 1 y agrega cada fila a matriz.</p>
+          </div>
+          <div class="code-container">
+          <pre>def crear_matriz_desde_lista():
+    datos = [10, 20, 30, 40, 50, 60]
+    matriz = []
+    filas = 2
+    columnas = 3
+    idx = 0
+
+    for i in <span class="code-placeholder" id="q21-part1" contenteditable="true">[...]</span>(filas):
+        fila = []
+        for j in range(columnas):
+            fila.append(datos[<span class="code-placeholder" id="q21-part2" contenteditable="true">[...]</span>])
+            idx += <span class="code-placeholder" id="q21-part3" contenteditable="true">[...]</span>
+
+        <span class="code-placeholder" id="q21-part4" contenteditable="true">[...]</span>.append(fila)
+
+    print(f"Matriz Reestructurada (2x3):\n{matriz}")
+    return matriz
+
+# crear_matriz_desde_lista()</pre>
+          </div>
+          <button class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-md text-sm mt-2" onclick="checkAnswer(21)">Verificar Respuesta</button>
+          <div id="q21-feedback" class="mt-2 p-3 rounded-md"></div>
+          </div>
+
+          <!-- Pregunta 22 -->
+          <div class="question bg-white rounded-lg shadow-sm p-5 border border-gray-200" id="q22">
+          <div class="flex justify-between items-center mb-3">
+          <h4 class="text-lg font-semibold text-gray-800">22. Crear Matriz Diagonal con Lista de Valores</h4>
+          <span class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm">2 Puntos</span>
+          </div>
+          <div class="bg-gray-50 p-3 rounded-md mb-3">
+          <p>Completa la función que crea una matriz cuadrada con una lista dada de valores en la diagonal principal y ceros en el resto.</p>
+          <p class="text-sm text-gray-600 mt-2">Sugerencia: Obtén la longitud con len, compara con == si i es igual a j, accede con [i] y usa append en matriz.</p>
+          </div>
+          <div class="code-container">
+          <pre>def crear_matriz_diagonal():
+    valores_diagonal = [5, 10, 15]
+    n = <span class="code-placeholder" id="q22-part1" contenteditable="true">[...]</span>(valores_diagonal)
+    matriz = []
+
+    for i in range(n):
+        fila = []
+        for j in range(n):
+            if i <span class="code-placeholder" id="q22-part2" contenteditable="true">[...]</span> j:
+                fila.append(valores_diagonal[<span class="code-placeholder" id="q22-part3" contenteditable="true">[...]</span>])
+            else:
+                fila.append(0)
+
+        matriz.<span class="code-placeholder" id="q22-part4" contenteditable="true">[...]</span>(fila)
+
+    print(f"Matriz Diagonal ({n}x{n}):\n{matriz}")
+    return matriz
+
+# crear_matriz_diagonal()</pre>
+          </div>
+          <button class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-md text-sm mt-2" onclick="checkAnswer(22)">Verificar Respuesta</button>
+          <div id="q22-feedback" class="mt-2 p-3 rounded-md"></div>
+          </div>
+
+          <!-- Pregunta 23 -->
+          <div class="question bg-white rounded-lg shadow-sm p-5 border border-gray-200" id="q23">
+          <div class="flex justify-between items-center mb-3">
+          <h4 class="text-lg font-semibold text-gray-800">23. Crear Matriz Triangular Superior</h4>
+          <span class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm">2 Puntos</span>
+          </div>
+          <div class="bg-gray-50 p-3 rounded-md mb-3">
+          <p>Completa la función que genera una matriz cuadrada triangular superior con unos en o sobre la diagonal y ceros debajo.</p>
+          <p class="text-sm text-gray-600 mt-2">Sugerencia: Usa range(n), condición i <= j para colocar 1, la sentencia else para 0 y append(fila) en matriz.</p>
+          </div>
+          <div class="code-container">
+          <pre>def crear_matriz_triangular_superior(n=3):
+    matriz = []
+
+    for i in <span class="code-placeholder" id="q23-part1" contenteditable="true">[...]</span>(n):
+        fila = []
+        for j in range(n):
+            if i <span class="code-placeholder" id="q23-part2" contenteditable="true">[...]</span> j:
+                fila.append(1)
+            <span class="code-placeholder" id="q23-part3" contenteditable="true">[...]</span>:
+                fila.append(0)
+
+        matriz.append(<span class="code-placeholder" id="q23-part4" contenteditable="true">[...]</span>)
+
+    print(f"Matriz Triangular Superior ({n}x{n}):\n{matriz}")
+    return matriz
+
+# crear_matriz_triangular_superior()</pre>
+          </div>
+          <button class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-md text-sm mt-2" onclick="checkAnswer(23)">Verificar Respuesta</button>
+          <div id="q23-feedback" class="mt-2 p-3 rounded-md"></div>
+          </div>
+
+          <!-- Pregunta 24 -->
+          <div class="question bg-white rounded-lg shadow-sm p-5 border border-gray-200" id="q24">
+          <div class="flex justify-between items-center mb-3">
+          <h4 class="text-lg font-semibold text-gray-800">24. Crear Matriz con Patrón de Ajedrez</h4>
+          <span class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm">2 Puntos</span>
+          </div>
+          <div class="bg-gray-50 p-3 rounded-md mb-3">
+          <p>Completa la función que crea una matriz 4x4 alternando 1 y 0 según la paridad de la suma de sus índices.</p>
+          <p class="text-sm text-gray-600 mt-2">Sugerencia: Itera con range(filas), suma índices con +, usa el operador de módulo % y agrega cada fila con append.</p>
+          </div>
+          <div class="code-container">
+          <pre>def crear_matriz_ajedrez(filas=4, columnas=4):
+    tablero = []
+
+    for i in <span class="code-placeholder" id="q24-part1" contenteditable="true">[...]</span>(filas):
+        fila = []
+        for j in range(columnas):
+            if (i <span class="code-placeholder" id="q24-part2" contenteditable="true">[...]</span> j) <span class="code-placeholder" id="q24-part3" contenteditable="true">[...]</span> 2 == 0:
+                fila.append(1)
+            else:
+                fila.append(0)
+
+        tablero.<span class="code-placeholder" id="q24-part4" contenteditable="true">[...]</span>(fila)
+
+    print(f"Tablero de Ajedrez ({filas}x{columnas}):\n{tablero}")
+    return tablero
+
+# crear_matriz_ajedrez()</pre>
+          </div>
+          <button class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-md text-sm mt-2" onclick="checkAnswer(24)">Verificar Respuesta</button>
+          <div id="q24-feedback" class="mt-2 p-3 rounded-md"></div>
+          </div>
+
+          <!-- Pregunta 25 -->
+          <div class="question bg-white rounded-lg shadow-sm p-5 border border-gray-200" id="q25">
+          <div class="flex justify-between items-center mb-3">
+          <h4 class="text-lg font-semibold text-gray-800">25. Crear Matriz con Números Pares Consecutivos</h4>
+          <span class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm">1 Punto</span>
+          </div>
+          <div class="bg-gray-50 p-3 rounded-md mb-3">
+          <p>Completa la función que genera una matriz 2x4 llenándola únicamente con números pares consecutivos a partir del 2.</p>
+          <p class="text-sm text-gray-600 mt-2">Sugerencia: Usa range(filas) e itera sobre columnas con range(columnas), agrega con append y suma 2 con +=.</p>
+          </div>
+          <div class="code-container">
+          <pre>def crear_matriz_pares():
+    matriz = []
+    filas = 2
+    columnas = 4
+    par_actual = 2
+
+    for i in <span class="code-placeholder" id="q25-part1" contenteditable="true">[...]</span>(filas):
+        fila = []
+        for j in range(<span class="code-placeholder" id="q25-part2" contenteditable="true">[...]</span>):
+            fila.<span class="code-placeholder" id="q25-part3" contenteditable="true">[...]</span>(par_actual)
+            par_actual <span class="code-placeholder" id="q25-part4" contenteditable="true">[...]</span> 2
+
+        matriz.append(fila)
+
+    print(f"Matriz de Pares (2x4):\n{matriz}")
+    return matriz
+
+# crear_matriz_pares()</pre>
+          </div>
+          <button class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-md text-sm mt-2" onclick="checkAnswer(25)">Verificar Respuesta</button>
+          <div id="q25-feedback" class="mt-2 p-3 rounded-md"></div>
+          </div>
+
+          <!-- Pregunta 26 -->
+          <div class="question bg-white rounded-lg shadow-sm p-5 border border-gray-200" id="q26">
+          <div class="flex justify-between items-center mb-3">
+          <h4 class="text-lg font-semibold text-gray-800">26. Crear Matriz con Entrada y Filtrado Negativos</h4>
+          <span class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm">2 Puntos</span>
+          </div>
+          <div class="bg-gray-50 p-3 rounded-md mb-3">
+          <p>Completa la función que crea una matriz 2x2 pidiendo datos al usuario y reemplazando cualquier número negativo por 0.</p>
+          <p class="text-sm text-gray-600 mt-2">Sugerencia: Usa range(filas), evalúa con < si es negativo, añade a fila con append y agrega fila a matriz.</p>
+          </div>
+          <div class="code-container">
+          <pre>def crear_matriz_positivos():
+    matriz = []
+    filas = 2
+    columnas = 2
+
+    for i in <span class="code-placeholder" id="q26-part1" contenteditable="true">[...]</span>(filas):
+        fila = []
+        for j in range(columnas):
+            val = int(input(f"Ingresa valor [{i},{j}]: "))
+            if val <span class="code-placeholder" id="q26-part2" contenteditable="true">[...]</span> 0:
+                val = 0
+            fila.<span class="code-placeholder" id="q26-part3" contenteditable="true">[...]</span>(val)
+
+        <span class="code-placeholder" id="q26-part4" contenteditable="true">[...]</span>.append(fila)
+
+    print(f"Matriz Filtrada (2x2):\n{matriz}")
+    return matriz
+
+# crear_matriz_positivos()</pre>
+          </div>
+          <button class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-md text-sm mt-2" onclick="checkAnswer(26)">Verificar Respuesta</button>
+          <div id="q26-feedback" class="mt-2 p-3 rounded-md"></div>
+          </div>
+
+          <!-- Pregunta 27 -->
+          <div class="question bg-white rounded-lg shadow-sm p-5 border border-gray-200" id="q27">
+          <div class="flex justify-between items-center mb-3">
+          <h4 class="text-lg font-semibold text-gray-800">27. Crear Matriz con Coordenadas Formateadas</h4>
+          <span class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm">1 Punto</span>
+          </div>
+          <div class="bg-gray-50 p-3 rounded-md mb-3">
+          <p>Completa la función que genera una matriz de 3x2 guardando en cada posición la cadena de texto con su coordenada "(i,j)".</p>
+          <p class="text-sm text-gray-600 mt-2">Sugerencia: Usa range para filas y range para columnas, añade texto con append y agrega fila a la matriz.</p>
+          </div>
+          <div class="code-container">
+          <pre>def crear_matriz_coordenadas():
+    matriz = []
+    filas = 3
+    columnas = 2
+
+    for i in <span class="code-placeholder" id="q27-part1" contenteditable="true">[...]</span>(filas):
+        fila = []
+        for j in <span class="code-placeholder" id="q27-part2" contenteditable="true">[...]</span>(columnas):
+            texto_coord = f"({i},{j})"
+            fila.<span class="code-placeholder" id="q27-part3" contenteditable="true">[...]</span>(texto_coord)
+
+        matriz.append(<span class="code-placeholder" id="q27-part4" contenteditable="true">[...]</span>)
+
+    print(f"Matriz de Coordenadas (3x2):\n{matriz}")
+    return matriz
+
+# crear_matriz_coordenadas()</pre>
+          </div>
+          <button class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-md text-sm mt-2" onclick="checkAnswer(27)">Verificar Respuesta</button>
+          <div id="q27-feedback" class="mt-2 p-3 rounded-md"></div>
+          </div>
+
+          <!-- Pregunta 28 -->
+          <div class="question bg-white rounded-lg shadow-sm p-5 border border-gray-200" id="q28">
+          <div class="flex justify-between items-center mb-3">
+          <h4 class="text-lg font-semibold text-gray-800">28. Crear Matriz con Potencias Matemáticas</h4>
+          <span class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm">2 Puntos</span>
+          </div>
+          <div class="bg-gray-50 p-3 rounded-md mb-3">
+          <p>Completa la función que genera una matriz 3x3 donde cada celda almacena la base (i+1) elevada a la potencia (j+1).</p>
+          <p class="text-sm text-gray-600 mt-2">Sugerencia: Usa range(filas), aplica el operador de potencia ** de Python, agrega a fila y añade fila a matriz.</p>
+          </div>
+          <div class="code-container">
+          <pre>def crear_matriz_potencias():
+    matriz = []
+    filas = 3
+    columnas = 3
+
+    for i in <span class="code-placeholder" id="q28-part1" contenteditable="true">[...]</span>(filas):
+        fila = []
+        for j in range(columnas):
+            potencia = (i + 1) <span class="code-placeholder" id="q28-part2" contenteditable="true">[...]</span> (j + 1)
+            fila.<span class="code-placeholder" id="q28-part3" contenteditable="true">[...]</span>(potencia)
+
+        <span class="code-placeholder" id="q28-part4" contenteditable="true">[...]</span>.append(fila)
+
+    print(f"Matriz de Potencias (3x3):\n{matriz}")
+    return matriz
+
+# crear_matriz_potencias()</pre>
+          </div>
+          <button class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-md text-sm mt-2" onclick="checkAnswer(28)">Verificar Respuesta</button>
+          <div id="q28-feedback" class="mt-2 p-3 rounded-md"></div>
+          </div>
+
+          <!-- Pregunta 29 -->
+          <div class="question bg-white rounded-lg shadow-sm p-5 border border-gray-200" id="q29">
+          <div class="flex justify-between items-center mb-3">
+          <h4 class="text-lg font-semibold text-gray-800">29. Crear Matriz WHILE con Suma de Índices</h4>
+          <span class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm">1 Punto</span>
+          </div>
+          <div class="bg-gray-50 p-3 rounded-md mb-3">
+          <p>Completa la función que crea una matriz 3x3 usando ciclos while anidados calculando la suma de sus índices (r + c).</p>
+          <p class="text-sm text-gray-600 mt-2">Sugerencia: Inicia el ciclo con while r < filas, evalúa con < en columnas, agrega con append e incrementa con +=.</p>
+          </div>
+          <div class="code-container">
+          <pre>def crear_matriz_while_indices():
+    matriz = []
+    filas = 3
+    columnas = 3
+    r = 0
+
+    <span class="code-placeholder" id="q29-part1" contenteditable="true">[...]</span> r < filas:
+        fila = []
+        c = 0
+        while c <span class="code-placeholder" id="q29-part2" contenteditable="true">[...]</span> columnas:
+            fila.<span class="code-placeholder" id="q29-part3" contenteditable="true">[...]</span>(r + c)
+            c += 1
+
+        matriz.append(fila)
+        r <span class="code-placeholder" id="q29-part4" contenteditable="true">[...]</span> 1
+
+    print(f"Matriz Suma Índices (3x3):\n{matriz}")
+    return matriz
+
+# crear_matriz_while_indices()</pre>
+          </div>
+          <button class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-md text-sm mt-2" onclick="checkAnswer(29)">Verificar Respuesta</button>
+          <div id="q29-feedback" class="mt-2 p-3 rounded-md"></div>
+          </div>
+
+          <!-- Pregunta 30 -->
+          <div class="question bg-white rounded-lg shadow-sm p-5 border border-gray-200" id="q30">
+          <div class="flex justify-between items-center mb-3">
+          <h4 class="text-lg font-semibold text-gray-800">30. Crear Matriz con FOR - Rangos Fijos e Input</h4>
+          <span class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm">1 Punto</span>
+          </div>
+          <div class="bg-gray-50 p-3 rounded-md mb-3">
+          <p>Completa la función que crea una matriz 2x3 usando for con rangos fijos y entrada por teclado del usuario.</p>
+          <p class="text-sm text-gray-600 mt-2">Sugerencia: Usa range(filas) y range(columnas), añade valor a fila_actual con append y agrega fila_actual a matriz con append.</p>
+          </div>
+          <div class="code-container">
+          <pre>def crear_matriz_for_rango():
+    matriz = []
+    filas = 2
+    columnas = 3
+
+    for i in <span class="code-placeholder" id="q30-part1" contenteditable="true">[...]</span>(filas):
+        fila_actual = []
+
+        for j in range(<span class="code-placeholder" id="q30-part2" contenteditable="true">[...]</span>):
+            valor = int(input(f"Ingresa valor para [{i},{j}]: "))
+            fila_actual.<span class="code-placeholder" id="q30-part3" contenteditable="true">[...]</span>(valor)
+
+        matriz.<span class="code-placeholder" id="q30-part4" contenteditable="true">[...]</span>(fila_actual)
+
+    print(f"\nMatriz Final (2x3):\n{matriz}")
+    return matriz
+
+# crear_matriz_for_rango()</pre>
+          </div>
+          <button class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-md text-sm mt-2" onclick="checkAnswer(30)">Verificar Respuesta</button>
+          <div id="q30-feedback" class="mt-2 p-3 rounded-md"></div>
+          </div>
+          
+          </div>
+          </div>
+          
+          <div class="text-center mt-10">
+          <button id="calculate-btn" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg text-lg" onclick="calculateFinalGrade()">Calcular Nota Final</button>
+          </div>
+          
+          <div id="results" class="results mt-8 bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+          <h2 class="text-xl font-semibold text-green-800 mb-4">Resultados de la Evaluación</h2>
+          <div id="results-details" class="space-y-2"></div>
+          <div id="email-notification" class="mt-4 text-center"></div>
+          <div id="score-display" class="mt-6 text-2xl font-bold text-center p-4 bg-green-600 text-white rounded-lg"></div>
+          </div>
+
+          <!-- Ejemplo de referencia -->
+          
+          </div>
+          
+          <script src="js/questions.js"></script>
+          <script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Cálculo de Notas</title>
+</head>
+<body>
+    <button onclick="testCalculation()">Probar Cálculo</button>
+    <div id="result"></div>
+
+    <script>
+        // Importar los valores de puntos
+        const pointValues = {
+          q1: 1, q2: 2, q3: 2, q4: 2,
+          q5: 1, q6: 1, q7: 1, q8: 2,
+          q9: 2, q10: 2, q11: 2, q12: 1, q13: 1, q14: 2,
+          q15: 2,
+          q16: 2, q17: 2, q18: 2, q19: 2, q20: 2,
+          q21: 2, q22: 2, q23: 2, q24: 2,
+          q25: 1, q26: 2, q27: 1, q28: 2, q29: 1, q30: 1
+        };
+
+        function testCalculation() {
+            let totalPossible = 0;
+            const questionNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30];
+            
+            questionNumbers.forEach((i) => {
+                const questionId = `q${i}`;
+                totalPossible += pointValues[questionId] || 0;
+            });
+
+            // Simular puntaje perfecto
+            let totalScore = totalPossible;
+            const percentage = (totalScore / totalPossible) * 100;
+
+            document.getElementById('result').innerHTML = `
+                <h3>Resultado de la Prueba:</h3>
+                <p>Total de preguntas: ${questionNumbers.length}</p>
+                <p>Puntos posibles: ${totalPossible}</p>
+                <p>Puntos obtenidos (simulando perfecto): ${totalScore}</p>
+                <p>Porcentaje: ${percentage}%</p>
+                <p>¿Suma 50 puntos?: ${totalPossible === 50 ? '✅ SÍ' : '❌ NO'}</p>
+            `;
+        }
+    </script>
+</body>
+</html>
